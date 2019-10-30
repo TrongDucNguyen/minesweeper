@@ -5,9 +5,7 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:Minesweeper"
         xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
-        Title="MainWindow"
-        Height="450"
-        Width="800">
+        Title="MainWindow">
     <Window.Resources>
         <xctk:AdditionConverter x:Key="AdditionConverter" />
         <Style x:Key="ButtonFocusVisual">
@@ -121,18 +119,19 @@
                     Orientation="Horizontal"
                     HorizontalAlignment="Left"
                     Margin="0,5,0,0">
-            <Label x:Name="label"
-                   Content="100"
-                   Canvas.Left="10"
-                   Canvas.Top="10"
-                   FontWeight="Bold"
-                   FontSize="16"
-                   Background="Black"
-                   Foreground="#FF57FF00"
-                   HorizontalAlignment="Center"
-                   VerticalContentAlignment="Center"
-                   HorizontalContentAlignment="Center"
-                   Width="50" />
+            <wpfTool:IntegerUpDown x:Name="label"
+                                   Value="100"
+                                   FontWeight="Bold"
+                                   FontSize="16"
+                                   Background="Black"
+                                   Foreground="#FF57FF00"
+                                   HorizontalAlignment="Center"
+                                   VerticalContentAlignment="Center"
+                                   HorizontalContentAlignment="Center"
+                                   Width="75"
+                                   IsEnabled="False"
+                                   VerticalAlignment="Center"
+                                   ShowButtonSpinner="False" />
             <Button x:Name="button"
                     Content="Reset"
                     Canvas.Left="63"
@@ -144,6 +143,12 @@
                           Content="Flag"
                           Style="{StaticResource ToggleButtonStyle1}"
                           Margin="25,0,0,0" />
+            <Button Content="Auto"
+                    Canvas.Left="63"
+                    Canvas.Top="17"
+                    Width="75"
+                    Margin="20,0,0,0"
+                    Click="Auto" />
         </StackPanel>
         <StackPanel HorizontalAlignment="Right"
                     VerticalAlignment="Top"

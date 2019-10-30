@@ -25,11 +25,14 @@ namespace Minesweeper
 
         public event EventHandler Open;
 
+        public event EventHandler SetFlag;
+
         public Cell(int x, int y)
         {
             InitializeComponent();
             X = x;
             Y = y;
+            IsMine = false;
         }
 
         public int X { get; set; }
@@ -118,24 +121,15 @@ namespace Minesweeper
             switch (Type)
             {
                 case CellType.Unknow:
-                    if (IsFlag == (e.ChangedButton == MouseButton.Left))
-                        SetFlag();
-                    else
-                        Open?.Invoke(this, e);
+                    (IsFlag == (e.ChangedButton == MouseButton.Left) ? SetFlag : Open)?.Invoke(this, e);
                     break;
                 case CellType.Flag:
-                    SetFlag();
+                    SetFlag?.Invoke(this, e);
                     break;
                 case CellType.Open:
                     Open?.Invoke(this, e);
                     break;
             }
-        }
-
-        private void SetFlag()
-        {
-            if (Type == CellType.Unknow) Type = CellType.Flag;
-            else if (Type == CellType.Flag) Type = CellType.Unknow;
         }
     }
 }

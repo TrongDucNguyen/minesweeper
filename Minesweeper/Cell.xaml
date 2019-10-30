@@ -15,7 +15,9 @@
               Width="29"
               Height="29"
               Background="White"
-              MouseDown="Click">
+              MouseDown="Click"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
             <Ellipse x:Name="DotLabel"
                      Fill="#FFACACAC"
                      HorizontalAlignment="Center"

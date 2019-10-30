@@ -57,15 +57,16 @@ namespace Minesweeper
                     FlagToggle.Checked += (object sender, RoutedEventArgs e) => { cell.IsFlag = true; };
                     FlagToggle.Unchecked += (object sender, RoutedEventArgs e) => { cell.IsFlag = false; };
                     cell.Open += (object sender, EventArgs e) => { Open((Cell)sender); };
+                    cell.SetFlag += (object sender, EventArgs e) => { SetFlag((Cell)sender); };
                 }
             }
 
-            int count = NumOfMines.Value.Value;
+            int count = Math.Min(NumOfMines.Value.Value, x * y / 2);
             Random random = new Random();
             while (count > 0)
             {
-                int i = random.Next(1, x);
-                int j = random.Next(1, y);
+                int i = random.Next(0, x);
+                int j = random.Next(0, y);
                 Cell cell = GetCell(i, j);
                 if (!cell.IsMine)
                 {
@@ -81,7 +82,26 @@ namespace Minesweeper
             return (Cell)((StackPanel)board.Children[x]).Children[y];
         }
 
-        private void Open(int x, int y)
+        public void SetFlag(int x, int y)
+        {
+            SetFlag(GetCell(x, y));
+        }
+
+        private void SetFlag(Cell cell)
+        {
+            if (cell == null) return;
+            if (cell.Type == Cell.CellType.Unknow)
+            {
+                cell.Type = Cell.CellType.Flag;
+
+            }
+            else if (cell.Type == Cell.CellType.Flag)
+            {
+                cell.Type = Cell.CellType.Unknow;
+            }
+        }
+
+        public void Open(int x, int y)
         {
             Cell cell = GetCell(x, y);
             if (cell == null || cell.Type != Cell.CellType.Unknow) return;
@@ -96,7 +116,7 @@ namespace Minesweeper
                 FlagToggle.IsChecked = false;
                 GameOver?.Invoke(this, null);
                 MessageBox.Show("Restart", "Game Over", MessageBoxButton.OK);
-                Reset();
+                //     Reset();
                 return;
             }
 
@@ -141,6 +161,11 @@ namespace Minesweeper
                 for (int j = cell.Y - 1; j <= cell.Y + 1; j++)
                     c += GetCell(i, j) != null && GetCell(i, j).Type == Cell.CellType.Flag ? 1 : 0;
             return c;
+        }
+
+        private void Auto(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
