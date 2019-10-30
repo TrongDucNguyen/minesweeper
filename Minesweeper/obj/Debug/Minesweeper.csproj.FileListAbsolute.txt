@@ -1,0 +1,46 @@
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csprojAssemblyReference.cache
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\MainWindow.g.cs
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\App.g.cs
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper_MarkupCompile.cache
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper_MarkupCompile.lref
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\MainWindow.baml
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.g.resources
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.cache
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
+C:\Users\trong\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe.config
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Minesweeper.exe
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\MainWindow.g.cs
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\App.g.cs
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper_MarkupCompile.cache
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper_MarkupCompile.lref
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\MainWindow.baml
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper.g.resources
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.cache
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Cell.g.cs
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Cell.baml
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Xceed.Wpf.AvalonDock.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\Xceed.Wpf.Toolkit.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj.CopyComplete
+G:\My Drive\legace code\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csprojAssemblyReference.cache
