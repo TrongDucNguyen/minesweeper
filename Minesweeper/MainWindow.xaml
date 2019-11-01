@@ -147,7 +147,7 @@
                     Canvas.Left="63"
                     Canvas.Top="17"
                     Width="75"
-                    Margin="20,0,0,0"
+                    Margin="20,0"
                     Click="Auto" />
         </StackPanel>
         <StackPanel HorizontalAlignment="Right"

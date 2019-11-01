@@ -27,17 +27,13 @@ namespace Minesweeper
 
         public event EventHandler SetFlag;
 
-        public Cell(int x, int y)
+        public Cell(GameState state)
         {
             InitializeComponent();
-            X = x;
-            Y = y;
-            IsMine = false;
+            State = state;
         }
 
-        public int X { get; set; }
-
-        public int Y { get; set; }
+        public GameState State { get; set; }
 
         private bool isFlag;
         public bool IsFlag
@@ -55,21 +51,23 @@ namespace Minesweeper
             }
         }
 
-        private int? value;
-        public int? Value
+        public int Value
         {
             get
             {
-                return value;
+                return State.Value;
             }
             set
             {
-                this.value = value;
+                State.Value = value;
                 Type = CellType.Open;
             }
         }
 
-        public bool IsMine { get; set; }
+        //public bool IsMine
+        //{
+        //    get { return State.IsMine; }
+        //}
 
         private CellType type = CellType.Unknow;
         public CellType Type
@@ -96,7 +94,7 @@ namespace Minesweeper
                     case CellType.Open:
                         DotLabel.Visibility = Visibility.Hidden;
                         Flag.Visibility = Visibility.Hidden;
-                        ValueLabel.Content = Value == 0 ? "" : Value.ToString();
+                        ValueLabel.Content = Value <= 0 ? "" : Value.ToString();
                         cell.Background = Brushes.LightGray;
                         break;
                 }
@@ -106,11 +104,11 @@ namespace Minesweeper
         internal void GameOver(object sender, EventArgs e)
         {
             Type = CellType.GameOver;
-            if (Flag.Visibility == Visibility.Visible && !IsMine)
+            if (Flag.Visibility == Visibility.Visible && !State.IsMine)
             {
                 ValueLabel.Content = "X";
             }
-            if (Flag.Visibility == Visibility.Hidden && IsMine)
+            if (Flag.Visibility == Visibility.Hidden && State.IsMine)
             {
                 Type = CellType.Mine;
             }

@@ -25,12 +25,12 @@
                      Width="8"
                      Height="8"
                      Visibility="Hidden" />
-            <Image x:Name="Flag"
-                   Source="Resources/flag.png"
-                   Margin="5"
-                   Visibility="Hidden" />
             <Image x:Name="Mine"
                    Source="Resources/mine.png"
+                   Margin="5"
+                   Visibility="Hidden" />
+            <Image x:Name="Flag"
+                   Source="Resources/flag.png"
                    Margin="5"
                    Visibility="Hidden" />
             <Label x:Name="ValueLabel"
